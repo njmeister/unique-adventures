@@ -32,9 +32,9 @@ export default function SelectGamePage() {
 			<li>
 				<Link to="/play/bubblefallleaves">Bubble Fall Leaves</Link>
 			</li>
-			<li>
+			{/* <li>
 				<Link to="/play/applecount">Apple Count</Link>
-			</li>
+			</li> */}
           </ul>
         </>
       )}
