@@ -5,6 +5,7 @@ import path from 'path';
 export default defineConfig({
   plugins: [react()],
   build: {
+	outDir: 'dist',
     rollupOptions: {
       input: path.resolve(__dirname, 'src/main.jsx'),
     },
