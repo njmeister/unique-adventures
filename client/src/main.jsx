@@ -1,13 +1,13 @@
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import React, { Suspense, lazy } from 'react';
-import App from '@/App.jsx';
-import '@/index.css';
-import playRoutes from '@/routes/PlayRoutes.jsx';
+import App from './App.jsx';
+import './index.css';
+import playRoutes from './routes/PlayRoutes.jsx';
 
 // Dynamically import components
-const Homepage = lazy(() => import('@/pages/Homepage'));
-const SelectGamePage = lazy(() => import('@/pages/SelectGamePage'));
+const Homepage = lazy(() => import('./pages/Homepage'));
+const SelectGamePage = lazy(() => import('./pages/SelectGamePage'));
 
 // Define the accessible routes, and which components respond to which URL
 const router = createBrowserRouter([

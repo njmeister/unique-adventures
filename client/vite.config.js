@@ -4,14 +4,9 @@ import path from 'path';
 
 export default defineConfig({
   plugins: [react()],
-  resolve: {
-    alias: {
-      '@': path.resolve(__dirname, '/src'),
-    },
-  },
   build: {
     rollupOptions: {
-      input: path.resolve(__dirname, '/src/main.jsx'),
+      input: path.resolve(__dirname, 'src/main.jsx'),
     },
   },
   server: {
