@@ -20,7 +20,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
     color: var(--color-dark);
-    background-color: var(--color-light);
+    background-color: black;
 
 	& a {
 		color: var(--color-link);
