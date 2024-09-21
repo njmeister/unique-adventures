@@ -6,12 +6,15 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, 'client/src'),
+      '@': path.resolve(__dirname, '/src'),
     },
   },
   build: {
     rollupOptions: {
-      input: path.resolve(__dirname, 'client/src/main.jsx'),
+      input: path.resolve(__dirname, '/src/main.jsx'),
     },
   },
+  server: {
+	port: 3001,
+  }
 });

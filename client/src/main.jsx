@@ -15,14 +15,14 @@ const router = createBrowserRouter([
     path: '/',
     element: <App />,
     children: [
-      {
-        path: '/',
-        element: (
-          <Suspense fallback={<div>Loading...</div>}>
-            <Homepage />
-          </Suspense>
-        ),
-      },
+    //   {
+    //     path: '/',
+    //     element: (
+    //       <Suspense fallback={<div>Loading...</div>}>
+    //         <Homepage />
+    //       </Suspense>
+    //     ),
+    //   },
       ...playRoutes,
       {
         path: '*',
