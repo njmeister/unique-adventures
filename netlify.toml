@@ -1,2 +1,3 @@
 [build]
-publish = "dist"  # Make sure this matches your Vite build output directory
+publish = "dist"
+command = "npm run build"
